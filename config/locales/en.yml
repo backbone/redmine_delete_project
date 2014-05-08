@@ -1,0 +1,31 @@
+# English strings go here for Rails i18n
+en:
+  label_feature_name: "Delete Project"
+
+  project_module_delete_project: "Delete Project"
+
+  permission_delete_project: "Delete Project"
+
+  global:
+    confirm_string: "yes"
+
+  project_delete:
+    error: "An error occured, the project has not been deleted"
+    unconfirmed: "Project deletion cancelled (you didn't confirm by saying '%{ok}')"
+    done: "The project has been deleted"
+
+  index:
+    title: "Delete a project"
+    subprojects_exist: "Sub-projects are linked with this project. Delete them first."
+    attention: "Attention"
+    warning: "You are going to delete the project <b>%{dead_project}</b>.<br/>This will be definitive. Please answer '%{ok}' to confirm."
+    are_you_sure: "Are you sure?"
+    submit_button: "Confirm"
+
+  settings:
+    affirmative: "Yes"
+    negative: "No"
+    destroy: "Really delete the project from the database"
+    status_number: "(If no delete:) Which value should be assigned to the status DELETED"
+    chmod: "Apply a 'chmod 000' on the repository"
+    repos_path: "(If chmod is executed:) Path of the repositories"

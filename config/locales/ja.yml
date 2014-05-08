@@ -1,0 +1,31 @@
+# Japanese strings go here for Rails i18n
+ja:
+  label_feature_name: "プロジェクト消去"
+
+  project_module_delete_project: "プロジェクト消去"
+
+  permission_delete_project: "プロジェクト消去"
+
+  global:
+    confirm_string: "はい"
+
+  project_delete:
+    error: "エラーが発生したので、プロジェクトは消去されませんでした"
+    unconfirmed: "プロジェクト消去はキャンセルされました ('%{ok}'と入力されませんでした)"
+    done: "プロジェクトは消去されました"
+
+  index:
+    title: "プロジェクト消去"
+    subprojects_exist: "サブプロジェクトが存在しますので、先にそれらを消去してから実行してください"
+    attention: "警告"
+    warning: "このプロジェクトを消去しようとしています <b>%{dead_project}</b>.<br/>この操作は元にもどせません、確認の為 '%{ok}'と入力してください."
+    are_you_sure: "よろしいですか？"
+    submit_button: "確認"
+
+  settings:
+    affirmative: "Yes"
+    negative: "No"
+    destroy: "Really delete the project from the database"
+    status_number: "(If no delete:) Which value should be assigned to the status DELETED"
+    chmod: "Apply a 'chmod 000' on the repository"
+    repos_path: "(If chmod is executed:) Path of the repositories"

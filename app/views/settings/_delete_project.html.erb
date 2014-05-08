@@ -1,0 +1,29 @@
+
+<b><%=I18n.t "settings.destroy" %></b>:
+<%= select_tag 'settings[destroy]', options_for_select([
+    [t("settings.affirmative"), "yes"],
+    [t("settings.negative"), "no"]
+  ], @settings['destroy'])%>
+
+<br/> <br/>
+
+<b><%= I18n.t "settings.status_number" %></b>:
+<%= text_field_tag("settings[status_number]", @settings["status_number"]) %>
+
+
+<br/> <br/>
+
+
+<b><%=I18n.t "settings.chmod" %></b>:
+<%= select_tag 'settings[chmod]', options_for_select([
+    [t("settings.affirmative"), "yes"],
+    [t("settings.negative"), "no"]
+  ], @settings['chmod'])%>
+
+<br/> <br/>
+
+<b><%= I18n.t "settings.repos_path" %></b>:
+<%= text_field_tag("settings[repos_path]", @settings["repos_path"]) %>
+
+
+

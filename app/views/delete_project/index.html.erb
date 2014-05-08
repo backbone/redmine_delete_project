@@ -1,0 +1,26 @@
+<h2><%= I18n.t("index.title") %></h2>
+
+<% if @subprojects != 0 %>
+<%= I18n.t("index.subprojects_exist") %>
+<% else %>
+<font color="red"><b><%= I18n.t("index.attention") %>:</b></font>
+<%= I18n.t("index.warning", :dead_project => @dead_project, :ok => @ok).html_safe %>
+
+<!-- Form -->
+<%= form_tag :controller=>'delete_project', :action=>'submit' do %>
+<table>
+  <tr><td><b><%= I18n.t("index.are_you_sure") %></b></td><td>
+    <%= text_field :confirm, params[:confirm], :size => 20  %>
+  </td>
+  <td> <%= hidden_field :dead_project, params[:dead_project], :value => params[:project_id] %></td></tr>
+</table>
+
+<!-- Submit -->
+<%= submit_tag I18n.t("index.submit_button") %>
+
+<% end %>
+<!-- /Form -->
+
+<% end # End du IF @subprojects %>
+
+
